@@ -6,8 +6,8 @@ html {
     background:rgb(255, 251, 0);
 }
 .user_card {
-    height: 400px;
-    width: 350px;
+    height: 500px;
+    width: 380px;
     margin-top: auto;
     margin-bottom: auto;
     background: rgba(79, 10, 63, 1);
@@ -15,16 +15,20 @@ html {
     display: flex;
     justify-content: center;
     flex-direction: column;
-
+ 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
 
 }
 
-
-#cadastrar {
-     background: rgb(255, 251, 0);
+.cadastrar_btn {
+    width: 100%;
+    background: rgb(255, 251, 0);
     color: white !important;
 }
-#cadastrar:hover {
+.cadastrar_btn:hover {
     color: rgba(79, 10, 63, 1);
 }
 
@@ -56,10 +60,7 @@ line-height: 80px;
 letter-spacing: 0px;
 text-align: center;
 }
-
-#cadastrar{
-    justify-self: flex-start;
-}
-cancelar{
-    justify-items: end;
+#tipo{
+    justify-content: center;
+    color: white;
 }
