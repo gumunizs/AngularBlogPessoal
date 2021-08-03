@@ -8,5 +8,5 @@ export class Postagem{
     public data: Date
     public curtidas: number
     public usuario: Usuario
-    public tema:Tema
+    public tema: Tema
 }

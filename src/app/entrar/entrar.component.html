@@ -18,20 +18,22 @@
 				</div>
 				<div class="d-flex justify-content-center form_container">
 					<form>
+						<h1 class='text-center mb-3' style="color: rgba(69, 0, 90, 0.904);">Entrar</h1>
 						<div class="input-group mb-2">
+							
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" name="" class="form-control input_user" value="" placeholder="Email">
+							<input [(ngModel)]='usuarioLogin.usuario' type="text" name="" class="form-control input_user" value="" placeholder="Email">
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-							<input type="password" name="" class="form-control input_pass" value="" placeholder="Senha">
+							<input [(ngModel)]='usuarioLogin.senha' type="password" name="" class="form-control input_pass" value="" placeholder="Senha">
 						</div>
 							<div class="d-flex justify-content-center mt-4 login_container">
-				 	<button type="button" name="button" class="btn login_btn">Login</button>
+				 	<button type="button" name="button" class="btn login_btn" (click)='entrar()'>Login</button>
 				   </div>
 					</form>
 				</div>

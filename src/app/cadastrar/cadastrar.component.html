@@ -24,38 +24,38 @@
 							<div class="input-group-append">
 								<span class="input-group-text"></span>
 							</div>
-							<input [(ngModel)]='usuarioo.nome' type="text" name="" class="form-control input_user" value="" placeholder="Nome">
+							<input [(ngModel)]='Usuario.nome' type="text" name="nome" class="form-control input_user" value="" placeholder="Nome">
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
 								<span class="input-group-text"></span>
 							</div>
-							<input [(ngModel)]='usuarioo.usuario' type="text" name="" class="form-control input_user" value="" placeholder="Email">
+							<input [(ngModel)]='Usuario.usuario' type="text" name="usuario" class="form-control input_user" value="" placeholder="Email">
 						</div>
 
 						<div class="input-group mb-2">
 							<div class="input-group-append">
 								<span class="input-group-text"></span>
 							</div>
-							<input (input)='confirmsenha($event)' type="password" name="" class="form-control input_pass" value="" placeholder="Senha">
+							<input (input)='confirmsenha($event)' type="password" name="senha" class="form-control input_pass" value="" placeholder="Senha">
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
 								<span class="input-group-text"></span>
 							</div>
-							<input [(ngModel)]='usuarioo.senha' type="password" name="" class="form-control input_pass" value=""
-							 id="confirmsenha"	placeholder="Confirme sua senha">
+							<input [(ngModel)]='Usuario.senha' type="password" name="confirmSenha" class="form-control input_pass" value=""
+							id="confirmsenha"	placeholder="Confirme sua senha">
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
 								<span class="input-group-text"></span>
 							</div>
-							<input [(ngModel)]='usuarioo.foto' type="text" name="foto" class="form-control input_user" id="foto"
+							<input [(ngModel)]='Usuario.foto' type="text" name="foto" class="form-control input_user" id="foto"
 								placeholder="Link da sua foto">
 						</div>
 						<div class="form-group">
 							<label for="tipo" id="tipo">Tipo de Usuário</label>
-							<select class="form-control" name="tipo" id="" (change)='tipoUser($event)'>
+							<select class="form-control" name="tipo"(change)='tipoUser($event)'>
 								<option style="color:blueviolet"> Selecione um tipo de usuário</option>
 								<option value="normal">Normal</option>
 								<option value="adm">Administrador</option>
@@ -64,7 +64,7 @@
 
 						<div class="d-flex p-2">
 							<button type="button" name="button" class="btn cadastrar_btn"
-								 (click)='cadastrarr' >Cadastrar</button>
+								(click)='cadastrar()' >Cadastrar</button>
 							<button type="button" name="button2" class="btn cadastrar_btn"
 								id="cancelar" routerLink='/entrar'>Cancelar</button>
 						</div>
