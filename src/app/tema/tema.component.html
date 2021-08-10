@@ -4,7 +4,7 @@
 <div class="col-md-12">
 
     <a routerLink='/inicio' class="text-left">
-        <i class="fas fa-home"> Início</i>
+        <i class="fas fa-home" style="color: blueviolet;"> Voltar para a página inicial</i>
     </a>
 
     <h1 class="fs-54 text-center">Temas</h1>
@@ -50,8 +50,8 @@
                 <th>{{item.id}}</th>
                 <td>{{item.descricao}}</td>
                 <td class="d-flex justify-content-end">
-                    <button class="btn btn-warning mr-3">Editar</button>
-                    <button class="btn btn-danger">Apagar</button>
+                    <button class="btn btn-warning mr-3" [routerLink]="['/tema-edit', item.id]">Editar</button>
+                    <button class="btn btn-danger" [routerLink]="['/tema-delete', item.id]">Apagar</button>
                 </td>
 
               </tr>
